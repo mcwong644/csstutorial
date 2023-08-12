@@ -1,0 +1,67 @@
+/*
+https://youtu.be/3YW65K6LcIA
+Flexbox Crash Course 2022
+Traversy Media
+stop 25:21
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.flex-container{
+    /* height: 400px; */
+    display: flex;
+    /* flex-direction: column; */
+    background-color: #f4f4f4;
+    /* always is on main axis */
+/* justify-content: space-between; */
+/* always on the cross axis */
+/* align-items: center; */
+/* flex-wrap: wrap; */
+}
+
+/* .flex-container::after{
+    content: '';
+    clear: both;
+    display: block;
+} */
+
+.item{
+    flex: 1;
+    /* flex-basis: 100px; */
+    /* width: 100px; */
+   height: 100px;
+   background: #254de4;
+   color: #fff;
+   margin: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /*float: left; /* also horizontal w/o using display:flex */
+}
+/*
+.item:nth-of-type(1){
+    align-self: start;
+    order: 2;
+    flex-basis:200px;
+    flex-grow:1;
+}
+.item:nth-of-type(2){
+    align-self: center;
+    order: 3;
+}
+.item:nth-of-type(3){
+    align-self: end;
+    order: 1;
+}
+*/
+
+
